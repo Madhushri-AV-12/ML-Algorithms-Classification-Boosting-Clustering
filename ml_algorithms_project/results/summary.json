@@ -1,0 +1,80 @@
+{
+  "classification": {
+    "RandomForestClassifier": {
+      "task": "classification",
+      "dataset": "Social_Network_Ads.csv",
+      "algorithm": "RandomForestClassifier",
+      "accuracy": 0.9,
+      "precision_weighted": 0.9025016458196182,
+      "recall_weighted": 0.9,
+      "f1_weighted": 0.9006666666666667
+    },
+    "GradientBoostingClassifier": {
+      "task": "classification",
+      "dataset": "Social_Network_Ads.csv",
+      "algorithm": "GradientBoostingClassifier",
+      "accuracy": 0.875,
+      "precision_weighted": 0.875,
+      "recall_weighted": 0.875,
+      "f1_weighted": 0.875
+    }
+  },
+  "insurance_boosting_regression": {
+    "task": "regression/boosting",
+    "dataset": "insurance_pre.csv",
+    "algorithm": "GradientBoostingRegressor",
+    "mae": 2481.9998185522604,
+    "rmse": 4345.321750596501,
+    "r2": 0.8783769700739386
+  },
+  "mall_clustering": {
+    "task": "clustering",
+    "dataset": "Mall_Customers.csv",
+    "algorithm": "KMeans",
+    "selected_k": 5,
+    "silhouette_score": 0.5546571631111091,
+    "rows_clustered": 200
+  },
+  "k_selection_scores": [
+    {
+      "k": 2,
+      "silhouette_score": 0.3212707813918878,
+      "inertia": 269.69101219276394
+    },
+    {
+      "k": 3,
+      "silhouette_score": 0.46658474419000145,
+      "inertia": 157.70400815035947
+    },
+    {
+      "k": 4,
+      "silhouette_score": 0.4939069237513199,
+      "inertia": 108.92131661364357
+    },
+    {
+      "k": 5,
+      "silhouette_score": 0.5546571631111091,
+      "inertia": 65.56840815571681
+    },
+    {
+      "k": 6,
+      "silhouette_score": 0.5398800926790663,
+      "inertia": 55.057348270385994
+    },
+    {
+      "k": 7,
+      "silhouette_score": 0.5281492781108291,
+      "inertia": 44.86475569922557
+    },
+    {
+      "k": 8,
+      "silhouette_score": 0.4567208019716266,
+      "inertia": 37.14811697229112
+    }
+  ],
+  "notes": [
+    "Metrics are from held-out test data for classification and regression.",
+    "KMeans k was selected by the highest silhouette score among k=2..8.",
+    "Results are dataset-specific and should not be interpreted as guarantees of real-world performance."
+  ]
+}

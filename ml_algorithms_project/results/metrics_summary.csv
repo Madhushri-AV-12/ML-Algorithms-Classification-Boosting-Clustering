@@ -1,0 +1,5 @@
+task,dataset,algorithm,accuracy,precision_weighted,recall_weighted,f1_weighted,mae,rmse,r2,selected_k,silhouette_score,rows_clustered
+classification,Social_Network_Ads.csv,RandomForestClassifier,0.9,0.9025016458196182,0.9,0.9006666666666667,,,,,,
+classification,Social_Network_Ads.csv,GradientBoostingClassifier,0.875,0.875,0.875,0.875,,,,,,
+regression/boosting,insurance_pre.csv,GradientBoostingRegressor,,,,,2481.9998185522604,4345.321750596501,0.8783769700739386,,,
+clustering,Mall_Customers.csv,KMeans,,,,,,,,5.0,0.5546571631111091,200.0
